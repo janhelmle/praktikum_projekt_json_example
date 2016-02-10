@@ -1,0 +1,96 @@
+1:	client<-Server
+{
+	"fullyBooked": [{
+		"from": "20160308",
+		"to": "20160308"
+	}, {
+		"from": "20160308",
+		"to": "20160312"
+	}],
+	"closed": [{
+		"from": "20160408",
+		"to": "20160412"
+	}]
+}
+
+----------
+2:	client->server
+{
+	"arrival": "20160308",
+	"departure": "20160312"
+}
+
+----------
+3:	client<-server
+{
+	"roomsinfo": [{
+			"typeofroom": "singleroom",
+			"availability": 3,
+			"priceDisplay": 54,
+			"pricePeriod": 216
+		}, {
+			"typeofroom": "doubleroom",
+			"availability": 4,
+			"priceDisplay": 75,
+			"pricePeriod": 300
+		}, {
+			"typeofroom": "twinroom",
+			"availability": 3,
+			"priceDisplay": 54,
+			"pricePeriod": 216
+		}, {
+			"typeofroom": "tripleroom",
+			"availability": 0,
+			"priceDisplay": 102,
+			"pricePeriod": 408
+		}, {
+			"typeofroom": "quadroom",
+			"availability": 4,
+			"priceDisplay": 70,
+			"pricePeriod": 280
+		}, {
+			"typeofroom": "apartmentsingle",
+			"availability": 4,
+			"priceDisplay": 87,
+			"pricePeriod": 348
+		}, {
+			"typeofroom": "apartmentdouble",
+			"availability": 4,
+			"priceDisplay": 116,
+			"pricePeriod": 464
+		}, {
+			"typeofroom": "familyroom",
+			"availability": 4,
+			"priceDisplay": 116,
+			"pricePeriod": 464
+		}
+
+	]
+}
+
+----------
+4:	client->server
+{
+	"bookedrooms": [{
+		"typeofroom": "singleroom",
+		"catering": "halbpension"
+	}, {
+		"typeofroom": "doubleroom",
+		"catering": null
+	}] ,
+	"bookedspecials": [
+		"Wanderausflug",
+		"Rafting-Tour"
+	] ,
+	"alternativeInvoiceAddress": {
+		"firstName": "Toni",
+		"lastName": "Tester",
+		"dateOfBirth": "YYYYMMDD",
+		"adress": "Scheringstrasse 2",
+		"postcode": "12345",
+		"email": "test@mobile-ad-media.com"
+	}
+}
+
+
+	
